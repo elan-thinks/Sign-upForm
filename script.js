@@ -28,16 +28,31 @@ submit.addEventListener('click', (e) => {
         confirmWindow.innerHTML = `
             <h2>Hello, ${firstName.value}!</h2>
             <p>Your account is ready to swim with the fish 🐠</p>
+            <button id="done" >Done</button>
         `;
         confirmWindow.style.padding = "10px";
         confirmWindow.style.background = "#e0f7ff";
         confirmWindow.style.border = "1px solid #b0e0ff";
         confirmWindow.style.borderRadius = "10px";
         confirmWindow.style.marginTop = "20px";
-        //  body.style.opacity="0.1"
 
+
+        //  body.style.opacity="0.1"
+       
         document.querySelector('body').appendChild(dimmed);
         document.querySelector('.wrapper').appendChild(confirmWindow);
+
+        let done = document.getElementById("done");
+        done.addEventListener('click',()=>{
+            confirmWindow.remove();
+            dimmed.remove();
+            firstName.value ="";
+            lastName.value="";
+            phone_Number.value="";
+            email.value="";
+            password.value="";
+            confirm_password="";
+        })
     } else {
         alert("Please fill out all fields! 🌊");
     }
