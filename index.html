@@ -27,38 +27,39 @@
             <fieldset id="myForm" onsubmit="return validateForm()">
         
                 <div class="input-group">
-                    <input required type="text" name="text" autocomplete="off" class="input" required pattern="[A-Za-z]{2,}" title="At least 2 letters">
+                    <input required type="text" name="text" autocomplete="off" id="firstName" class="input" required pattern="[A-Za-z]{2,}" title="At least 2 letters">
                     <label class="user-label">First Name</label>
                 </div>
                 <div class="input-group">
-                    <input required type="text" name="text" autocomplete="off" class="input" required pattern="[A-Za-z]{2,}" title="At least 2 letters">
+                    <input required type="text" name="text" autocomplete="off" id="lastName" class="input" required pattern="[A-Za-z]{2,}" title="At least 2 letters">
                     <label class="user-label">Last Name</label>
                 </div> 
                 <div class="input-group">
-                    <input required type="number" name="number" autocomplete="off" class="input" required pattern="[0-9]{10,15}" title="Enter a valid phone number">
+                    <input required type="number" name="number" autocomplete="off" id="phone-number" class="input" required pattern="[0-9]{10,15}" title="Enter a valid phone number">
                     <label class="user-label">Phone Number</label>
                 </div> 
                 <div class="input-group">
-                    <input required type="email" name="email" autocomplete="off" class="input">
+                    <input required type="email" name="email" autocomplete="off" id="email" class="input">
                     <label class="user-label">Email</label>
                 </div> 
                 <div class="input-group">
-                    <input required type="password" name="password" autocomplete="off" class="input" minlength="6">
+                    <input required type="password" name="password" autocomplete="off" id="password" class="input" minlength="6">
                     <label class="user-label">Password</label>
                 </div>
                 <div class="input-group">
-                    <input required type="password" name="password" autocomplete="off" class="input">
+                    <input required type="password" name="confirm-password" autocomplete="off" id="confirm-password" class="input">
                     <label class="user-label">Confirm Password</label>
                     <div id="passError" class="error"></div>
                 </div>
                 
                 </fieldset>
-                <button type="submit">Create Account</button>
+                <button type="submit" id="submit">Create Account</button>
                 <label for="">Already have an account ? 
                  <a href="">LogIn</a>
                 </label>
         </div>
     </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
