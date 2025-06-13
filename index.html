@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <div class="contianer">
+  
+    
+    <div class="box2"></div>
+
+    <div class="box1">
+
+    </div>
+    <div class="box3">
+        <div class="wrapper">
+            <h2>Sign Up</h2>
+            <span>Get Started</span>
+          
+            <img src="./Assets/fish.gif" alt="fish."  class="fish">
+            <img src="./Assets/jellyfish.gif" alt="jellyfish" class="jellyfish">
+
+            <fieldset id="myForm" onsubmit="return validateForm()">
+        
+                <div class="input-group">
+                    <input required type="text" name="text" autocomplete="off" class="input" required pattern="[A-Za-z]{2,}" title="At least 2 letters">
+                    <label class="user-label">First Name</label>
+                </div>
+                <div class="input-group">
+                    <input required type="text" name="text" autocomplete="off" class="input" required pattern="[A-Za-z]{2,}" title="At least 2 letters">
+                    <label class="user-label">Last Name</label>
+                </div> 
+                <div class="input-group">
+                    <input required type="number" name="number" autocomplete="off" class="input" required pattern="[0-9]{10,15}" title="Enter a valid phone number">
+                    <label class="user-label">Phone Number</label>
+                </div> 
+                <div class="input-group">
+                    <input required type="email" name="email" autocomplete="off" class="input">
+                    <label class="user-label">Email</label>
+                </div> 
+                <div class="input-group">
+                    <input required type="password" name="password" autocomplete="off" class="input" minlength="6">
+                    <label class="user-label">Password</label>
+                </div>
+                <div class="input-group">
+                    <input required type="password" name="password" autocomplete="off" class="input">
+                    <label class="user-label">Confirm Password</label>
+                    <div id="passError" class="error"></div>
+                </div>
+                
+                </fieldset>
+                <button type="submit">Create Account</button>
+                <label for="">Already have an account ? 
+                 <a href="">LogIn</a>
+                </label>
+        </div>
+    </div>
+</div>
+</body>
+</html>
