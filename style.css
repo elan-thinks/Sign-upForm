@@ -9,6 +9,9 @@ body{
     margin: 0; 
     overflow: hidden; 
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* animation: wave 20s ease-in-out infinite; */
     /* background: rgb(19, 20, 20); */
     /* background: rgb(153, 239, 245); */
@@ -16,11 +19,14 @@ body{
 .contianer{
     position: relative;
     display: flex;
-    height: 100vh;
-    width: 100%;
+    flex-wrap: wrap;
+    height: 90vh;
+    width: 500px;
+    /* min-width: 200px; */
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
+    /* border: 3px solid red; */
     /* animation: wave 20s ease-in-out infinite; */
 
 }
@@ -93,13 +99,15 @@ body{
   }
 div{
     position: absolute;
-    width: 500px;
-    height: 810px;
+    width: 99%;
+    /* min-width: 45px; */
+    height: 94vh;
+    /* min-height: 800px; */
 
 }
 .box1{
     
-    height: 690px;
+    height: 80vh;
     background: linear-gradient(#4bb6c4,#09c6d4);
     box-shadow: 0 0 40px #08bac7;
     border-radius: 21px;
@@ -140,7 +148,7 @@ div{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 400px;
+    /* width: 400px; */
 
 
 }
@@ -283,7 +291,33 @@ body .dimmed {
     background-color: black;
   }
 
+  @media screen and (max-width: 500px) {
+    .contianer {
+        width: 350px;
 
+    /* border: 8px solid rgb(228, 224, 16); */
+
+    }
+    div{
+        width: 97%;
+        /* min-width: 45px; */
+        height: 90vh;
+
+    }
+    .box1{
+        width: 95%;
+        height: 75vh;
+
+    }
+    fieldset{
+       min-width: 330px;
+
+    }
+    .input{
+        /* width: 50%; */
+
+    }
+  }
 
 
 
